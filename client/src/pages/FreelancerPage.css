@@ -1,0 +1,114 @@
+.freelancer-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.freelancer-page h1 {
+  color: #145858;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 300px;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-delay: calc(var(--animation-order) * 0.1s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h2 {
+  margin: 0 0 0.5rem;
+  color: #0c3b3b;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.budget {
+  display: block;
+  font-weight: 500;
+  color: #145858;
+  margin-bottom: 0.5rem;
+}
+
+.attachment-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: #145858;
+  text-decoration: underline;
+}
+
+.attachment-link:hover {
+  text-decoration: none;
+  color: #0c3b3b;
+}
+
+.apply-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ffc94b;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #fcbf3f;
+}
+
+.no-projects {
+  color: #999;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

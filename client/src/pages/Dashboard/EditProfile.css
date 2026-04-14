@@ -1,0 +1,114 @@
+/* src/pages/EditProfile.css */
+
+.edit-profile-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.step-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 500;
+  color: #888;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab.active {
+  color: #333;
+  border-bottom: 3px solid #0073b1; /* LinkedIn blue */
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  border-color: #0073b1;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.form-footer button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0073b1;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-footer button:hover {
+  background-color: #005c91;
+}
+
+@media (max-width: 600px) {
+  .step-tabs {
+    flex-direction: column;
+  }
+  .tab {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

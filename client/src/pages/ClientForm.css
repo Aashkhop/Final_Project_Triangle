@@ -1,0 +1,230 @@
+/* === Page Wrapper === */
+.client-form-page {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Header Section (if needed) === */
+.client-form-header {
+  background-color: #0f766e;
+  color: white;
+  padding: 20px 32px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.client-form-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.client-settings-btn {
+  background-color: white;
+  color: #0f766e;
+  font-weight: 600;
+  padding: 8px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.client-settings-btn:hover {
+  background-color: #e0f2f1;
+}
+
+/* === Main Content === */
+.client-form-body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+/* === Form Card === */
+.client-form-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* === Section Title === */
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* === Form Grid === */
+.client-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+/* === Form Group === */
+.client-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-form-group label {
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.client-form-group input,
+.client-form-group select,
+.client-form-group textarea {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.client-form-group input:focus,
+.client-form-group select:focus,
+.client-form-group textarea:focus {
+  outline: none;
+  border-color: #0f766e;
+  background-color: #ffffff;
+}
+
+/* === Submit Button === */
+.client-form-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+.client-submit-btn {
+  background-color: #0f766e;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.client-submit-btn:hover {
+  background-color: #115e59;
+}
+
+/* === File Input Styling === */
+.client-form-group input[type="file"] {
+  padding: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .client-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .client-form-card {
+    padding: 24px;
+  }
+
+  .client-form-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .client-settings-btn {
+    align-self: flex-end;
+  }
+}
+
+.form-success {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h3 {
+  font-size: 22px;
+  color: #0f766e;
+  margin-bottom: 1rem;
+}
+
+.modal-box p {
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.modal-box button {
+  background-color: #0f766e;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-box button:hover {
+  background-color: #115e59;
+}
