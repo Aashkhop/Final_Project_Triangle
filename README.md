@@ -198,7 +198,7 @@ The Socket.io server runs alongside Express on the same port using `http.createS
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/Aashish/Final_Project_Triangle.git
+git clone https://github.com/Aashkhop/Final_Project_Triangle.git
 cd Final_Project_Triangle
 ```
 
@@ -387,7 +387,7 @@ git push origin feature/your-feature-name
 
 ### 🐛 Reporting Issues
 
-[Open an issue](https://github.com/Aashish/Final_Project_Triangle/issues) with:
+[Open an issue](https://github.com/Aashkhop/Final_Project_Triangle/issues) with:
 - A clear description and steps to reproduce
 - Expected vs. actual behaviour
 - Relevant error logs or screenshots
